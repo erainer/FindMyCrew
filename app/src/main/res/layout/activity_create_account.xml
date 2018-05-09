@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.findmycrew.CreateAccount">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="545dp"
+        android:layout_height="539dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/concerttwo" />
+
+    <ImageView
+        android:id="@+id/blackBox"
+        android:layout_width="326dp"
+        android:layout_height="342dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/galada"
+        android:text="@string/create"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameBox"
+        android:layout_width="153dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/blackBox"
+        app:layout_constraintTop_toTopOf="@+id/blackBox" />
+
+    <EditText
+        android:id="@+id/lastNameBox"
+        android:layout_width="153dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/lastName"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/blackBox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/firstNameBox"
+        app:layout_constraintTop_toTopOf="@+id/blackBox" />
+
+    <EditText
+        android:id="@+id/emailBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/blackBox"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/blackBox"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameBox" />
+
+    <EditText
+        android:id="@+id/passBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/blackBox"
+        app:layout_constraintStart_toStartOf="@+id/blackBox"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox" />
+
+    <EditText
+        android:id="@+id/repassBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/rePassword"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/blackBox"
+        app:layout_constraintStart_toStartOf="@+id/blackBox"
+        app:layout_constraintTop_toBottomOf="@+id/passBox" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/createBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/blackBox"
+        app:layout_constraintEnd_toEndOf="@+id/blackBox"
+        app:layout_constraintStart_toStartOf="@+id/blackBox"
+        app:layout_constraintTop_toBottomOf="@+id/repassBox" />
+</android.support.constraint.ConstraintLayout>
